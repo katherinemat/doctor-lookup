@@ -5,28 +5,40 @@
   <link rel="stylesheet" href="build/css/styles.css">
   <script src="build/js/vendor.min.js"></script>
   <script type="text/javascript" src="build/js/app.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lora|Raleway" rel="stylesheet">
   <title>Doctor Lookup</title>
 </head>
 
 <body>
-  <div class="search row">
-    <div class="form-group col-md-6">
-      <label for="medical-issue">Medical Issue</label>
-      <input type="text" name="medical-issue" id="medical-issue">
+  <div class="container">
+    <div class="search row">
+      <div class="col-xs-6 form-inline">
 
-      <label for="search-limit">Search Limit</label>
-      <input type="number" name="search-limit" id="search-limit" min="1" max="100">
+        <div class="form-group">
+          <label for="medical-issue">Medical Issue</label>
+          <input type="text" name="medical-issue" id="medical-issue">
+        </div>
 
-      <label for="search-radius">Search Radius</label>
-      <input type="number" name="search-radius" id="search-radius" min="1" max="100">
+        <div class="form-group">
+          <label for="search-limit">Search Limit</label>
+          <input type="number" name="search-limit" id="search-limit" min="1" max="100">
+        </div>
 
-    <button class="btn-success" id="get-doctors">Get Doctors!</button>
+        <div class="form-group">
+          <label for="search-radius">Search Radius</label>
+          <input type="number" name="search-radius" id="search-radius" min="1" max="100">
+        </div>
+
+        <button class="btn-success" id="get-doctors">Get Doctors!</button>
+      </div>
+
+      <div class="col-xs-6">
+        <div id="results"></div>
+      </div>
+
     </div>
 
-    <div class="col-md-6">
-      <div id="results"></div>
-    </div>
-
+    <img id="tree" src="img/tree.png" alt="tree">
   </div>
 </body>
 

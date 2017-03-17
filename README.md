@@ -32,7 +32,7 @@ _(requires node and bower to be installed globally on computer)_
 
 ## Known Bugs
 
-Even though bower_components folder is included in the .gitignore file, the whole folder is pushed up to github. Other files and folders listed in .gitignore file act as expected. Why? I also had trouble figuring out how the location parameters worked in the BetterDoctors API. They seemed to return results that weren't in the exact area I wanted.
+Even though bower_components folder is included in the .gitignore file, the whole folder is pushed up to github. Other files and folders listed in .gitignore file act as expected. Why? I also had trouble figuring out how the location parameters worked in the BetterDoctors API. They seemed to return results that weren't in the exact area I wanted. I could not get bootstrap to link with my files.
 
 ## Technologies Used
 
