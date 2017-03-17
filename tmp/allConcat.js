@@ -4,6 +4,11 @@ $(document).ready(function() {
   var currentDoctorObject = new Doctor();
   $('#get-doctors').click(function() {
     var medicalIssue = $("#medical-issue").val();
-    currentDoctorObject.getDoctor(medicalIssue);
+    $('#medical-issue').val("");
+
+    var searchLimit = $('#search-limit').val();
+    $('#search-limit').val("");
+    
+    currentDoctorObject.getDoctor(medicalIssue, searchLimit);
   });
 });

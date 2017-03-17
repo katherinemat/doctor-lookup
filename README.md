@@ -27,7 +27,7 @@ _(requires node and bower to be installed globally on computer)_
 1. console.log results from API call
 - Get results to list out in ul on homepage
 - Include certain contact information with each doctor
-- allow user to search by partial words; input: cold; output: all doctors that have colds associated with their practice
+- allow user to search by partial words; input: cold; output: all doctors that have colds associated with their practice (not going to do because API doesn't support this)
 - user can specify radius of search. default is 100. can lower
 
 ## Known Bugs
