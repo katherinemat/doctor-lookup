@@ -5,16 +5,14 @@
   <link rel="stylesheet" href="build/css/styles.css">
   <script src="build/js/vendor.min.js"></script>
   <script type="text/javascript" src="build/js/app.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYHE_eB1vpFRnsj1kqvEtTP87whcv8Pow"></script>
-  <script type="text/javascript" src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
   <title>911 Seattle</title>
 </head>
 
 <body>
-  <div class="search">
-    <div class="form-group">
-      <label for="crime">Choose a kind of crime</label>
-      <select required class="form-control" id="crime">
+  <div class="search row">
+    <div class="form-group col-md-6">
+      <label for="medical-issue">Medical Issue</label>
+      <select required class="form-control" id="medical-issue">
         <option value="" disabled selected></option>
         <option>MOTOR VEHICLE COLLISION</option>
         <option>HARASSMENT, THREATS</option>
@@ -25,52 +23,15 @@
         <option>BURGLARY - RESIDENTIAL, UNOCCUPIED</option>
         <option>LIQUOR VIOLATION - ADULT</option>
       </select>
+      
+    <button class="btn-success" id="get-doctors">Get 911 Calls Map!</button>
     </div>
-    <div class="form-group">
-      <label for="district">Choose District/Sector</label>
-      <select required class="form-control" id="district">
-        <option value="" disabled selected></option>
-        <option>99</option>
-        <option>B</option>
-        <option>C</option>
-        <option>D</option>
-        <option>E</option>
-        <option>F</option>
-        <option>G</option>
-        <option>H</option>
-        <option>J</option>
-        <option>K</option>
-        <option>L</option>
-        <option>M</option>
-        <option>N</option>
-        <option>O</option>
-        <option>Q</option>
-        <option>R</option>
-        <option>S</option>
-        <option>U</option>
-        <option>W</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="first-date">Between</label>
-      <input type="date" name="first-date" id="first-date">
-      <label for="second-date">And</label>
-      <input type="date" name="second-date" id="second-date">
-    </div>
-    <button class="btn-success" id="get-crimes">Get 911 Calls Map!</button>
-    <button class="btn-success" id="get-chart">Get 911 Calls Chart!</button>
-  </div>
-  <div class="row">
-    <div class="col-md-7">
-      <h3>My Google Maps Demo</h3>
-      <div id="map"></div>
-    </div>
-    <div class="col-md-5">
-      <h3>My Charts Demo</h3>
-      <div id="chartContainer" style="height: 500px; width: 100%;"></div>
-    </div>
-  </div>
 
+    <div class="col-md-6">
+      <ul id="results"></ul>
+    </div>
+
+  </div>
 </body>
 
 
