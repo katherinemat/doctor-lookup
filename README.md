@@ -28,10 +28,11 @@ _(requires node and bower to be installed globally on computer)_
 - Get results to list out in ul on homepage
 - Include certain contact information with each doctor
 - allow user to search by partial words; input: cold; output: all doctors that have colds associated with their practice
+- user can specify radius of search. default is 100. can lower
 
 ## Known Bugs
 
-Even though bower_components folder is included in the .gitignore file, the whole folder is pushed up to github. Why?
+Even though bower_components folder is included in the .gitignore file, the whole folder is pushed up to github. Other files and folders listed in .gitignore file act as expected. Why? I also had trouble figuring out how the location parameters worked in the BetterDoctors API. They seemed to return results that weren't in the exact area I wanted.
 
 ## Technologies Used
 
